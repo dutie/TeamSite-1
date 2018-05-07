@@ -14,6 +14,14 @@ $theme-colors: (
 
 // Custom code/partials
 
-body{
-  background-color: red !important;
+@media only screen and (max-width: 500px) {
+  navText {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  navSmallText {
+    display: none !important;
+  }
 }
