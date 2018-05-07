@@ -12,5 +12,17 @@ $theme-colors: (
 // Custom code/partials
 
 .bg-info {
-  background-color: Purple !important;
+  background-color: green !important;
+}
+
+@media (max-width: 500px) {
+  .navSmallText {
+    display: none !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .navText {
+    display: none !important;
+  }
 }
