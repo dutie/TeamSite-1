@@ -1,19 +1,16 @@
 // Override Bs4 variables and custom mixins
 
-
 $theme-colors: (
         'primary': blue,
         'danger': blue
 );
 
-
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/variables";
 
-
 // Custom code/partials
 
-body{
-  background-color: red !important;
+.bg-info {
+  background-color: Purple !important;
 }
