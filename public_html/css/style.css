@@ -9440,4 +9440,47 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: Purple !important;
 }
 
+@media (min-width: 500px) {
+  .navSmallText {
+    display: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .navText {
+    display: none !important;
+  }
+}
+
+.container {
+  display: inline-block !important;
+  cursor: pointer !important;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 /*# sourceMappingURL=maps/style.css.map */
