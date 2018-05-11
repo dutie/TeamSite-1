@@ -9436,29 +9436,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 500px) {
-  navText {
-=======
-@media (min-width: 500px) {
-  .navSmallText {
->>>>>>> 2a7fc59a6a7a3c63f6a9759bb162d4635c840e2f
-    display: none !important;
-  }
-}
-
-<<<<<<< HEAD
-@media only screen and (min-width: 500px) {
-  navSmallText {
-    display: none !important;
-  }
-=======
-@media (max-width: 500px) {
-  .navText {
-    display: none !important;
-  }
-}
-
 .container {
   display: inline-block !important;
   cursor: pointer !important;
@@ -9488,7 +9465,6 @@ a.text-dark:hover, a.text-dark:focus {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
->>>>>>> 2a7fc59a6a7a3c63f6a9759bb162d4635c840e2f
 }
 
 /*# sourceMappingURL=maps/style.css.map */
