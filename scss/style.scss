@@ -11,17 +11,6 @@ $theme-colors: (
 
 // Custom code/partials
 
-@media (min-width: 500px) {
-  .navSmallText {
-    display: none !important;
-  }
-}
-
-  @media (max-width: 500px) {
-  .navText {
-    display: none !important;
-  }
-}
 
 .container {
   display: inline-block !important;
