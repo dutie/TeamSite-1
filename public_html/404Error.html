@@ -1,10 +1,90 @@
-<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Error 404</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta title="Creative Brush">
+
+    <meta property="description" content="Shop ideas, art &amp;amp; learn. Powerful ideas from a(pa)rt.">
+    <meta name="Author" content="Mats Fockaert, Dries Janssen">
+    <meta name="keywords" content="Art, Learn, Mona Lisa, Painting, How to">
+
 </head>
 <body>
 
+<header class="container-fluid ">
+    <nav class="fixed-top navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Creative Brush</a>
+        <button onclick="myFunction(this)" class=" navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <!--button created for navbar that uses bootstrap navbar commands but also self-made javaScript opening and changing the appearance of button-->
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+        </button>
+        <!--collopse makes that the navbar starts out collapsed. It is connected with button wit ID-->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More information</a>
+                </li>
+                <li class="nav-item dropdown">s
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Examples of Art
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">The Starry Night</a>
+                        <a class="dropdown-item" href="#">Art for noobs</a>
+                        <a class="dropdown-item" href="#">Mona Lisa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.hawthornart.com/" target="_blank">Creator of our Mona
+                            Lisa</a>
+                    </div>
+                </li>
+            </ul>
+            <!--to search-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="search">
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<div class="card bg-dark mt-5 h-auto w-100 text-center">
+    <img src="pic/Brush.jpg" class="card-img h-50 w-100">
+    <div class="card-img-overlay align-middle">
+        <br>
+        <h1 class="card-title text-white display-1 font-weight-bold">ERROR 404</h1>
+
+    </div>
+
+    <article class="container-fluid bg-secondary">
+        <div class=" h-100 mt-5 pt-5">
+            <h1 class="text-black-50">Sorry, we hebben de pagina niet gevonden.</h1>
+        </div>
+    </article>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--custom scripts-->
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
 </body>
 </html>

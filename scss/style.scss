@@ -2,7 +2,8 @@
 
 $theme-colors: (
         'primary': blue,
-        'danger': blue
+        'danger': rgb(237, 67, 55),
+        'secondary': #EAB78B
 );
 
 // Link to BS4
@@ -10,7 +11,6 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/variables";
 
 // Custom code/partials
-
 
 .container {
   display: inline-block !important;
