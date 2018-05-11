@@ -1,194 +1,151 @@
-<!doctype html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <meta title="A(p)art">
-    <meta name="description" content="Welkom op onze site.">
+    <meta property="description" content="Shop ideas, art &amp;amp; learn. Powerful ideas from a(pa)rt.">
     <meta name="Author" content="Mats Fockaert, Dries Janssen">
-    <title>A(p)art</title>
+    <meta name="keywords" content="Art, Learn, Mona Lisa, Painting, How to">
+
+    <title>A(pa)rt</title>
+
 </head>
-<body class="bg-dark text-monospace">
+<body>
 
-<!--small-->
-<header class="bg-info container-fluid row navSmallText">
+<header class="container-fluid pb-5">
+    <nav class="fixed-top navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">A(pa)rt</a>
+        <button onclick="myFunction(this)" class=" navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <!--button created for navbar that uses bootstrap navbar commands but also self-made javaScript opening and changing the appearance of button-->
 
-    <nav class="navbar navSmallText navbar-inverse">
-        <div class="navSmallText container-fluid">
-            <div class="navSmallText container navbar-toggler" data-toggle="collapse" data-target=".navCollapse"
-                 onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
 
-            <a class="navSmallText" href="#"> <span class="text-warning">A</span>(PA)<span
-                    class="text-warning">RT</span></a>
-            <div class="collapse navbar-collapse navCollapse">
-
-                <ul class="nav navbar-nav text-warning">
-
-                    <li><a href="artikels.html">articles</a></li>
-                    <li><a href="PASMIJAAN">contact us</a></li>
-                    <li><a href="PASMIJAAN">more info</a></li>
-                    <li><a href="PASMIJAAN">home</a></li>
-
-                </ul>
-
-            </div>
+        </button>
+        <!--collopse makes that the navbar starts out collapsed. It is connected with button wit ID-->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More information</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Examples of Art
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">The Starry Night</a>
+                        <a class="dropdown-item" href="#">Art for noobs</a>
+                        <a class="dropdown-item" href="#">Mona Lisa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.hawthornart.com/" target="_blank">Creator of our Mona
+                            Lisa</a>
+                    </div>
+                </li>
+            </ul>
+            <!--to search-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="search">
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-
     </nav>
-    <h1 class="navSmallText pt-3 text-center">
-        <span class="text-warning">A</span>(PA)<span class="text-warning">RT</span> <!--should be red-->
-    </h1>
-    <hr class="mb-4">
 </header>
 
-<!--big-->
-<section>
+<div class="card bg-dark pb-2 text-center">
+    <img src="pic/paint.jpg" class="card-img" content="hi">
+    <div class="card-img-overlay align-middle">
 
-    <header class="bg-info navText">
-        <h1 class="mx-auto text-center navText">
-            A<span class="text-warning">(PA)</span>RT
-        </h1>
-        <hr class="mb-4">
-    </header>
+        <h1 class="display-1 card-title">INDEX</h1>
+        <p class="display-2 card-text text-white text-raleway">stay <span class="text-raleway text-info">creative</span>
+        </p>
+    </div>
+</div>
 
-    <nav class=" fixed-top bg-warning navText h4 text-info  text-center">
-        <div class="row">
+<div class="container-fluid">
 
-            <div class="col-lg-2 col-md-6 col-sm-6">
+    <div class="row">
 
-                <a class="nav-link"
-                   href="#"><i class=" fas fa-home"></i> <span class="navText">Home</span>
+        <aside class="col-sm-2">
+            <h4 class="linkerkant-title">
+                <b>Linkerkant</b>
+            </h4>
+
+            <div class="linkerkant-list">
+                <a href="index.html">
+                    <img src="pic/The%20Starry%20Night.jpg" class="w-100">
+                    <h4>The Starry Night</h4>
                 </a>
             </div>
+        </aside>
 
-            <div class="col-lg-2 col-md-6 col-sm-1">
-                <a class="nav-link" href="overOns.html"><i class="fas fa-users"></i> <span
-                        class="navText">about us</span>
-                </a>
-            </div>
+        <section class="col-sm-8">
 
-            <div class="display-4 col-lg-4 col-md-6 col-sm-1">
-                <i class="fas fa-box"></i>
-            </div>
-
-            <div class="col-lg-2 col-md-6 col-sm-1">
-                <a class="nav-link" href="contact_us.html"><i class="fas fa-users"> </i> <span
-                        class="navText">contact us</span>
-                </a>
-            </div>
-
-            <div class="col-lg-2 col-md-6 col-sm-1 dropdown">
-                <div class="btn-group">
-                    <a class="nav-link" href="artikels.html"> <i class="fas fa-image"> </i> <span
-                            class="navText">articles</span>
-                    </a>
-                    <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown">
-                    </a>
-
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="PASMIJAAN">famous art</a>
-                        <a class="dropdown-item" href="PASMIJAAN">Hawthorn Art</a>
-                        <a class="dropdown-item" href="PASMIJAAN">Art for noobs</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="artikels.html">overview</a>
+            <article>
+                <h2>Title to our index page</h2>
+                <img src="pic/mona-lisa_orig.jpg" title="example image" class="w-100">
+                <div class="row">
+                    <p class="col-sm-10">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad assumenda, commodi cum
+                        cumque dicta
+                        dignissimos dolore eligendi eos, inventore non odit quod soluta tempore temporibus ullam unde
+                        veniam vitae?
+                    </p>
+                    <div class="col-sm-2">
+                        <input class="btn btn-primary" value="More..." type="button">
                     </div>
-
                 </div>
-            </div>
-        </div>
-    </nav>
-    <header class="bg-info navText">
-        <h1 class="mx-auto text-center navText">
-            A<span class="text-warning">(PA)</span>RT
-        </h1>
-        <hr class="mb-4">
-    </header>
+            </article>
 
+            <article>
+                <h2>Extra info</h2>
+                <img src="pic/easyTree.jpg" title="example image" class="w-100">
+                <div class="row">
+                    <p class="col-sm-10">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam assumenda autem culpa cum
+                        dolores
+                        est ex explicabo harum ipsa itaque iusto laborum mollitia neque nesciunt, officia porro saepe
+                        sint.
+                    </p>
+                    <div class="col-sm-2">
+                        <input class="btn btn-primary" value="More..." type="button">
+                    </div>
+                </div>
+            </article>
 
-    <div class="navText container text-center float-left col-lg-2">
-        <div class="navText list-group p-2">
-            <a href="#" class="navText list-group-item list-group-item-action active">
-                Jump to the right info!
+        </section>
+
+        <aside class="col-sm-2">
+            <a href="index.html" name="example link">
+                <img src="pic/The%20Starry%20Night.jpg" title="example pic">
+                <h6>Explain pic</h6>
             </a>
-            <a href="#" class="list-group-item list-group-item-action">bla deel1</a>
-            <a href="#" class="list-group-item list-group-item-action">bla deel2</a>
-            <a href="#" class="list-group-item list-group-item-action">bla deel3</a>
-            <a href="#" class="list-group-item list-group-item-action disabled">bla deel4</a>
-        </div>
-    </div>
-    <div class="container bg-warning">
-        <div class="text-center bg-info">
-            <div class="col-lg-12 col-md-6 col-sm-12  jumbotron">
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad delectus distinctio doloremque eos expedita fugit, iste libero natus nesciunt nostrum officia quos reiciendis reprehenderit tempora tempore totam voluptate voluptatum.</span><span>Aliquam beatae culpa cupiditate ea eaque, est illo impedit inventore ipsa ipsam, iusto natus nulla odit perferendis provident quam quasi quidem reprehenderit rerum saepe ullam veniam veritatis voluptates. Similique, temporibus.</span><span>Distinctio eius necessitatibus possimus praesentium, quisquam quo sequi soluta tempore veniam! Amet architecto atque consectetur corporis dolor iste laboriosam mollitia necessitatibus nobis obcaecati odio praesentium, quidem quod reiciendis sapiente, unde.</span><span>Accusantium aperiam debitis eius facilis, ipsa optio ratione! Aliquam assumenda consectetur, deleniti, eius est ex labore maiores nihil nisi officia quam quos repudiandae sapiente similique voluptatibus. Asperiores corporis explicabo veritatis!</span><span>Eligendi eum expedita repellendus sed. Atque culpa delectus est illum nihil nostrum, quisquam. Ab accusantium at, atque dolores esse fugiat harum magni nam odit pariatur quae quam reiciendis sit temporibus!</span>
-                </p>
-            </div>
-            <div class="col-lg-12 col-md-6 col-sm-12  jumbotron bg-dark text-info">
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad delectus distinctio doloremque eos expedita fugit, iste libero natus nesciunt nostrum officia quos reiciendis reprehenderit tempora tempore totam voluptate voluptatum.</span><span>Aliquam beatae culpa cupiditate ea eaque, est illo impedit inventore ipsa ipsam, iusto natus nulla odit perferendis provident quam quasi quidem reprehenderit rerum saepe ullam veniam veritatis voluptates. Similique, temporibus.</span><span>Distinctio eius necessitatibus possimus praesentium, quisquam quo sequi soluta tempore veniam! Amet architecto atque consectetur corporis dolor iste laboriosam mollitia necessitatibus nobis obcaecati odio praesentium, quidem quod reiciendis sapiente, unde.</span><span>Accusantium aperiam debitis eius facilis, ipsa optio ratione! Aliquam assumenda consectetur, deleniti, eius est ex labore maiores nihil nisi officia quam quos repudiandae sapiente similique voluptatibus. Asperiores corporis explicabo veritatis!</span><span>Eligendi eum expedita repellendus sed. Atque culpa delectus est illum nihil nostrum, quisquam. Ab accusantium at, atque dolores esse fugiat harum magni nam odit pariatur quae quam reiciendis sit temporibus!</span>
-                </p>
-            </div>
-            <div class="col-lg-12 col-md-6 col-sm-12  jumbotron">
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad delectus distinctio doloremque eos expedita fugit, iste libero natus nesciunt nostrum officia quos reiciendis reprehenderit tempora tempore totam voluptate voluptatum.</span><span>Aliquam beatae culpa cupiditate ea eaque, est illo impedit inventore ipsa ipsam, iusto natus nulla odit perferendis provident quam quasi quidem reprehenderit rerum saepe ullam veniam veritatis voluptates. Similique, temporibus.</span><span>Distinctio eius necessitatibus possimus praesentium, quisquam quo sequi soluta tempore veniam! Amet architecto atque consectetur corporis dolor iste laboriosam mollitia necessitatibus nobis obcaecati odio praesentium, quidem quod reiciendis sapiente, unde.</span><span>Accusantium aperiam debitis eius facilis, ipsa optio ratione! Aliquam assumenda consectetur, deleniti, eius est ex labore maiores nihil nisi officia quam quos repudiandae sapiente similique voluptatibus. Asperiores corporis explicabo veritatis!</span><span>Eligendi eum expedita repellendus sed. Atque culpa delectus est illum nihil nostrum, quisquam. Ab accusantium at, atque dolores esse fugiat harum magni nam odit pariatur quae quam reiciendis sit temporibus!</span>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    </nav>
-</section>
-
-<div class="navText container text-center float-left col-lg-2">
-    <div class="navText list-group p-2">
-        <a href="#" class="navText list-group-item list-group-item-action active">
-            Jump to the right info!
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">bla deel1</a>
-        <a href="#" class="list-group-item list-group-item-action">bla deel2</a>
-        <a href="#" class="list-group-item list-group-item-action">bla deel3</a>
-        <a href="#" class="list-group-item list-group-item-action disabled">bla deel4</a>
+        </aside>
 
 
     </div>
-    </section>
-    <section>
-        <div class="card text-center bg-dark text-white-50">
 
-            <div class="card-footer bg-info">
-                Created by: Dries Janssen, Mats Fockaert
-            </div>
-        </div>
-    </section>
+</div>
 
-    <!-- Modal
-    <div class="modal fade" id="imageModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Random image</h5>
-                </div>
-                <div class="modal-body">
-                    <img src="https://placeimg.com/600/337/nature" class="img-fluid" alt="Random image">
-                </div>
-                <div class="modal-footer">
-                    <button   class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
-    <!--custom scripts-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--custom scripts-->
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+
+
 </body>
 </html>
