@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>articles</title>
+</head>
+<body class="bg-dark text-monospace">
+
+
+<section>
+    <header class="container-fluid">
+        <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">A(pa)rt</a>
+            <button onclick="myFunction(this)" class=" navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+            </button>
+            <!--collopse makes that the navbar starts out collapsed. It is connected with button wit ID-->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">More information</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Examples of Art
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">The Starry Night</a>
+                            <a class="dropdown-item" href="#">Art for noobs</a>
+                            <a class="dropdown-item" href="#">Mona Lisa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.hawthornart.com/" target="_blank">Creator of our
+                                Mona
+                                Lisa</a>
+
+                    </li>
+                    <li class="nav-link justify-content-center" href="#">TITLE</li>
+                </ul>
+                <!--to search-->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="search">
+                    <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<div class="row mt-5 pt-5">
+    <aside class="col">
+        <!--empty col to fill-->
+    </aside>
+
+
+    <div id="carouselId" class="carousel slide w-50 h-50" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <h4 class="text-center text-white">The Starry Night</h4>
+                <img class="img-fluid w-100" src="pic/The%20Starry%20Night.jpg" alt="The Starry Night">
+            </div>
+            <div class="carousel-item">
+                <h4 class="text-center text-white">Mona Lisa</h4>
+                <img class="img-fluid w-100" src="pic/mona-lisa_orig.jpg" alt="Mona Lisa By Vladimir">
+            </div>
+            <div class="carousel-item">
+                <h4 class="text-center text-white">Easy Tree</h4>
+                <img class="img-fluid w-100" src="pic/easyTree.jpg" alt="Easy Tree">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <aside class="col">
+        <!--empty col to fill-->
+    </aside>
+
+</div>
+
+<br>
+
+<div class="container-fluid text-center justify-content-center w-50">
+    <div class="row ">
+        <a href="#" class="col-lg-12 col-sm-12 list-group-item list-group-item-action bg-warning">
+            Jump to the right info!
+        </a>
+        <a href="famous.html" class="col-lg-12 col-sm-6 bg-white text-dark">Famous Art</a>
+        <a href="artikel_1.html" class="col-lg-12 col-sm-6 bg-white text-dark">Mona Lisa</a>
+        <a href="noobs.html" class="col-lg-12 col-sm-12 bg-white text-dark">Art for Noobs</a>
+    </div>
+</div>
+
+<footer>
+    <div class="card mt-5">
+
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <footer class="blockquote-footer text-center ">Mats Fockaert & Dries Janssen<cite title="Source Title">
+                    CC</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+<!--custom scripts-->
+</body>
+</html>

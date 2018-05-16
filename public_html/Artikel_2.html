@@ -1,0 +1,156 @@
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta title="Creative Brush">
+    <meta property="description" content="Shop ideas, art &amp;amp; learn. Powerful ideas from a(pa)rt.">
+    <meta name="Author" content="Mats Fockaert, Dries Janssen">
+    <meta name="keywords" content="Art, Learn, Mona Lisa, Painting, How to">
+
+    <title>Creative Brush</title>
+
+</head>
+<body>
+
+<header class="container-fluid">
+    <nav class="fixed-top navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">A(pa)rt</a>
+        <button onclick="myFunction(this)" class=" navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+        </button>
+        <!--collopse makes that the navbar starts out collapsed. It is connected with button wit ID-->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More information</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Examples of Art
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">The Starry Night</a>
+                        <a class="dropdown-item" href="#">Art for noobs</a>
+                        <a class="dropdown-item" href="#">Mona Lisa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="artikels.html" target="_blank">Alle artikels</a>
+                    </div>
+                </li>
+            </ul>
+            <!--to search-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="search">
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+
+<section>
+    <div class="card">
+
+        <div class="card-body">
+            <div class="card-title text-center mt-5">
+                <h1 class="font-weight-bold">Art for beginners </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card h-75 border-0 bg-dark">
+        <img class="card-img-top img-fluid align-self-center h-100 w-50" src="pic/easyTree.jpg" alt="background">
+        <div class="card-body bg-white text-dark">
+            <div class="card-text text-center"><p> TEXT </p></div>
+            <div class="card border-0 bg-dark">
+                <div class="row mt-5 pt-5">
+                    <aside class="col">
+                        <!--empty col to fill-->
+                    </aside>
+
+
+                    <div id="carouselId" class="carousel slide w-50 h-50 center" data-ride="carousel">
+
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <h4 class="text-center text-white">Step 1:</h4>
+                                <img class="img-fluid w-100" src="pic/garfield_step_1.gif" alt="step1">
+                            </div>
+                            <div class="carousel-item">
+                                <h4 class="text-center text-white">Step 2:</h4>
+                                <img class="img-fluid w-100" src="pic/garfield_step_2.gif" alt="step2">
+                            </div>
+                            <div class="carousel-item">
+                                <h4 class="text-center text-white">Step 3:</h4>
+                                <img class="img-fluid w-100" src="pic/garfield_step_3.gif" alt="step3">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <aside class="col">
+                        <!--empty col to fill-->
+                    </aside>
+
+                </div>
+            </div>
+            <div class="card-text text-center">
+                <br>
+                <p><i class="difColor fas fa-file"></i> Alle credits van bovenstaande foto's gaan uit naar:
+                    <a href="https://www.dragoart.com/tuts/12843/1/1/how-to-draw-garfield-easy.htm#.Wvwg6iCYOCo">
+                        www.dragoart.com</a></p>
+                <br>
+                <br>
+                <br>
+                <footer>
+                    <div class="card mt-5">
+
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <footer class="blockquote-footer text-center ">Auteur: <cite title="Source Title"> Mats
+                                    Fockaert</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--custom scripts-->
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+
+
+</body>
+</html>
